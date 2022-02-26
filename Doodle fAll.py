@@ -17,6 +17,17 @@ bg_image = pygame.image.load('bg.png').convert_alpha()
 char_image = pygame.image.load('very_green.png').convert_alpha()
 char_rekt = pygame.Rect(0,200,70,72)
 speed = 0
+
+#player class
+class Player():
+    def __init__(self, x, y):
+        self.image = pygame.transform.scale()
+        self.widht=25
+        self.hight=40
+        self.rect = pygame.REct(0, 0, self.width, self.height)
+        self.rect.center=(x, y)
+
+guy = Player(SCREEN_WIDTH // 2, SCREEN_HEIGHT - 150)
 #game loop
 run = True
 while run:
